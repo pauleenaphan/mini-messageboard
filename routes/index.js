@@ -21,7 +21,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/new', function(req, res, next) {
-  res.render('form');
+  res.render('form', {title: "Add a new message"});
 });
 
 router.post('/new', function(req, res, next){
