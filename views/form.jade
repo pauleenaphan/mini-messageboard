@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    h1 Add a new message
+    form(action="/new" method="POST")
+        div
+            label(for="user") Name:
+            input(type="text" id="user" name="user" required)
+        div
+            label(for="text") Message:
+            textarea(id="text" name="message" required)
+        div
+            button(type="submit") Submit
+
